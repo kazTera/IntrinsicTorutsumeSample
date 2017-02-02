@@ -1,0 +1,2 @@
+# IntrinsicTorutsumeSample
+use AutoLayout Sample
