@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IntrinsicTorutsumeSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NGP-KJ-QLh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLb-qY-2AW">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Label" id="mSF-eD-RtA">
+                                        <connections>
+                                            <action selector="pressToolbarLabel:" destination="BYZ-38-t0r" id="5fp-37-Vvd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Button" id="Hl3-dU-Wkt">
+                                        <connections>
+                                            <action selector="pressToolbarButton:" destination="BYZ-38-t0r" id="u1B-Xk-p9J"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Swich" id="gcs-ll-wAi">
+                                        <connections>
+                                            <action selector="pressToolbarSwitch:" destination="BYZ-38-t0r" id="dwQ-1n-xcD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HogeGehoString" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vy-ne-HH5">
+                                <rect key="frame" x="99" y="323" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="22l-NC-PIv">
+                                <rect key="frame" x="235" y="318" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="QCS-iy-u1N"/>
+                                </constraints>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbv-BQ-9hk">
+                                <rect key="frame" x="8" y="319" width="83" height="30"/>
+                                <state key="normal" title="HogeButton"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TiN-UN-dJo">
+                                <rect key="frame" x="292" y="0.0" width="2" height="623"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="2" id="C6H-cg-1ni"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97930165469999997" green="1" blue="0.93011657299999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nLb-qY-2AW" secondAttribute="bottom" id="AJG-Ye-bfQ"/>
+                            <constraint firstItem="22l-NC-PIv" firstAttribute="leading" secondItem="6vy-ne-HH5" secondAttribute="trailing" constant="8" id="AKN-Py-67n"/>
+                            <constraint firstItem="Xbv-BQ-9hk" firstAttribute="leading" secondItem="NGP-KJ-QLh" secondAttribute="leading" constant="8" id="DLU-04-2vB"/>
+                            <constraint firstItem="nLb-qY-2AW" firstAttribute="top" secondItem="TiN-UN-dJo" secondAttribute="bottom" id="KGh-ux-Fy1"/>
+                            <constraint firstItem="TiN-UN-dJo" firstAttribute="top" secondItem="NGP-KJ-QLh" secondAttribute="top" id="LET-w9-Hg7"/>
+                            <constraint firstAttribute="trailing" secondItem="nLb-qY-2AW" secondAttribute="trailing" id="UVA-eq-GMo"/>
+                            <constraint firstItem="6vy-ne-HH5" firstAttribute="centerY" secondItem="NGP-KJ-QLh" secondAttribute="centerY" id="XbL-NO-g5f"/>
+                            <constraint firstItem="nLb-qY-2AW" firstAttribute="leading" secondItem="NGP-KJ-QLh" secondAttribute="leading" id="dBM-7i-Ycq"/>
+                            <constraint firstAttribute="trailing" secondItem="nLb-qY-2AW" secondAttribute="trailing" id="gdp-3z-huH"/>
+                            <constraint firstItem="TiN-UN-dJo" firstAttribute="leading" secondItem="22l-NC-PIv" secondAttribute="trailing" constant="8" id="ipa-Fc-zVy"/>
+                            <constraint firstItem="6vy-ne-HH5" firstAttribute="leading" secondItem="Xbv-BQ-9hk" secondAttribute="trailing" constant="8" id="nw8-sH-xEO"/>
+                            <constraint firstItem="nLb-qY-2AW" firstAttribute="top" secondItem="TiN-UN-dJo" secondAttribute="bottom" id="rnX-bD-JPf"/>
+                            <constraint firstItem="22l-NC-PIv" firstAttribute="centerY" secondItem="NGP-KJ-QLh" secondAttribute="centerY" id="tQU-65-zIs"/>
+                            <constraint firstItem="nLb-qY-2AW" firstAttribute="leading" secondItem="NGP-KJ-QLh" secondAttribute="leading" id="veV-KP-2hF"/>
+                            <constraint firstItem="Xbv-BQ-9hk" firstAttribute="centerY" secondItem="NGP-KJ-QLh" secondAttribute="centerY" id="zYZ-md-6ej"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Xbv-BQ-9hk" id="Vd0-Hu-HmC"/>
+                        <outlet property="buttonLeadingConstraint" destination="DLU-04-2vB" id="qFz-IH-VDU"/>
+                        <outlet property="label" destination="6vy-ne-HH5" id="SsN-Ud-0aM"/>
+                        <outlet property="labelLeadingConstraint" destination="nw8-sH-xEO" id="9hB-WP-Ox1"/>
+                        <outlet property="switchButton" destination="22l-NC-PIv" id="9KT-DM-2ar"/>
+                        <outlet property="switchLeadingConstraint" destination="AKN-Py-67n" id="nel-VW-uTy"/>
+                        <outlet property="switchWidthConstraint" destination="QCS-iy-u1N" id="dYR-Ah-gvP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
